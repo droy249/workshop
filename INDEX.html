@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Calculator</title>
+    </head>
+    <body>
+        <div style="margin-left: 400px; margin-top: 100px;">
+            <h1 style="">A Simple Calculator</h1>
+            <p>Enter the numbers below:</p>
+            <input type="number" placeholder="First number" id="fno" name="fno">
+            <input type="number" placeholder="Second number" id="sno" name="sno">
+                
+            <p id="result">Your Result Shows Here</p> 
+            <button onclick="add()" > + </button>
+            <button onclick="subtract()"> - </button>
+            <button onclick="multiply()"> x </button>
+            <button onclick="divide()"> / </button>
+        </div>
+                
+    <script>
+        function add() {
+            var fno = document.getElementById("fno").value
+            var sno = document.getElementById("sno").value
+            document.getElementById("result").innerHTML = "Addition Result: " + (Number(fno) + Number(sno))
+        }
+        function subtract() {
+            var fno=document.getElementById("fno").value
+            var sno=document.getElementById("sno").value
+            document.getElementById("result").innerHTML = "Subtraction Result: " + (Number(fno) - Number(sno))
+        }
+        function multiply() {
+            var fno=document.getElementById("fno").value
+            var sno=document.getElementById("sno").value
+            document.getElementById("result").innerHTML = "Muliplication Result: " + Number(fno) * Number(sno)
+        }
+        function divide() {
+            var sno=document.getElementById("sno").value
+            if(Number(sno) == 0){
+                document.getElementById("result").innerHTML = "ERROR: Division by 0 not possible" 
+            }
+            else{
+                var fno=document.getElementById("fno").value
+                document.getElementById("result").innerHTML = "Division Result: " + Number(fno) / Number(sno)
+            }
+        }
+    </script>
+    </body>
+</html>
