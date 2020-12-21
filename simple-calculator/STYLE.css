@@ -1,0 +1,17 @@
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 10px solid black;
+    padding: 50px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 400px;
+    margin-top: 50px;
+  }
+  button {
+      margin-left: 10px; 
+      border-radius: 50%; 
+      height: 50px; 
+      width: 50px;
+      font-size: xx-large;
+  }
